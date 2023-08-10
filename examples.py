@@ -6,21 +6,24 @@ def example1():
                   [".",".",".",".","#",".",".",".","."],
                   [".","#",".",".",".",".",".","#","."],
                   [".","#",".",".",".",".",".","#","."]]
-    return solution(labyrinth1)
-
+    path, steps = solution(labyrinth1)
+    return steps
+    
 def example2():
     labyrinth2 = [[".",".",".",".",".",".",".",".","."],
                   ["#",".",".",".","#",".",".","#","."],
                   [".",".",".",".","#",".",".",".","."],
                   [".","#",".",".",".",".",".","#","."],
                   [".","#",".",".",".",".",".","#","."]]
-    return solution(labyrinth2)
+    path, steps = solution(labyrinth2)
+    return steps
 
 def example3():
     labyrinth3 = [[".",".","."],
                   [".",".","."],
                   [".",".","."]]
-    return solution(labyrinth3)
+    path, steps = solution(labyrinth3)
+    return steps
 
 def example4():
     labyrinth4 = [[".",".",".",".",".",".",".",".",".","."],
@@ -33,4 +36,5 @@ def example4():
                   [".",".",".",".",".",".","#",".",".","."],
                   [".",".",".",".",".",".",".",".",".","."],
                   [".",".",".",".",".",".",".",".",".","."]]
-    return solution(labyrinth4)
+    path, steps = solution(labyrinth4)
+    return steps
