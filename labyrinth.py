@@ -60,3 +60,15 @@ def solution(labyrinth):
                         q.append((x, y + 1, 1 - orientation))
     
     return [], -1
+
+def print_labyrinth(labyrinth, path):
+    for i in range(len(labyrinth)):
+        for j in range(len(labyrinth[0])):
+            if (i, j) in path:
+                if (i, j) != path[-1]:  # Skip the last asterisk
+                    print("*", end=" ")
+                else:
+                    print(labyrinth[i][j], end=" ")
+            else:
+                print(labyrinth[i][j], end=" ")
+        print()

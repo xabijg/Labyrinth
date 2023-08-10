@@ -7,7 +7,8 @@ def example1():
                   [".","#",".",".",".",".",".","#","."],
                   [".","#",".",".",".",".",".","#","."]]
     path, steps = solution(labyrinth1)
-    return steps
+    print("Resultado 1:", steps," esperado valor: 11")  # 11
+    print_labyrinth(labyrinth1, path)
     
 def example2():
     labyrinth2 = [[".",".",".",".",".",".",".",".","."],
@@ -16,14 +17,15 @@ def example2():
                   [".","#",".",".",".",".",".","#","."],
                   [".","#",".",".",".",".",".","#","."]]
     path, steps = solution(labyrinth2)
-    return steps
-
+    print("Resultado 2:", steps," esperado valor: -1")  # -1
+    print_labyrinth(labyrinth2, path)
 def example3():
     labyrinth3 = [[".",".","."],
                   [".",".","."],
                   [".",".","."]]
     path, steps = solution(labyrinth3)
-    return steps
+    print("Resultado 3:", steps," esperado valor: 2")  # 2
+    print_labyrinth(labyrinth3, path)
 
 def example4():
     labyrinth4 = [[".",".",".",".",".",".",".",".",".","."],
@@ -37,4 +39,5 @@ def example4():
                   [".",".",".",".",".",".",".",".",".","."],
                   [".",".",".",".",".",".",".",".",".","."]]
     path, steps = solution(labyrinth4)
-    return steps
+    print("Resultado 4:", steps," esperado valor: 16")  # 16
+    print_labyrinth(labyrinth4, path)
